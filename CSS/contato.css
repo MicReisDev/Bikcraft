@@ -1,0 +1,301 @@
+:root {
+  --cor-0: #ffffff;
+  --cor-1: #f7f7f7;
+  --cor-2: #ededed;
+  --cor-3: #dedede;
+  --cor-4: #cccccc;
+  --cor-5: #b2b2b2;
+  --cor-6: #9c9c9c;
+  --cor-7: #717171;
+  --cor-8: #595959;
+  --cor-9: #404040;
+  --cor-10: #2e2e2e;
+  --cor-11: #111111;
+  --cor-12: #000000;
+  --cor-p1: #ffbb00;
+  --cor-p2: #e4a30b;
+  --cor-p3: #a66f00;
+  --cor-p4: #664400;
+  --cor-p5: #332200;
+}
+body {
+  background: var(--cor-1);
+}
+
+.contato-bg {
+  background-image: linear-gradient(
+    to bottom,
+    var(--cor-11),
+    var(--cor-11) 60%,
+    var(--cor-1) 50%
+  );
+  height: 950px;
+}
+
+.contato-conteiner {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+/* topo*/
+.contato-txt {
+  padding-top: 60px;
+}
+
+.contato-txt h1 {
+  color: var(--cor-5);
+  font-size: 24px;
+  position: relative;
+}
+.contato-txt h1::after {
+  content: "";
+  position: absolute;
+  background: url(../img/dec/top-right.svg) no-repeat center;
+  height: 100px;
+  width: 100px;
+  left: 1100px;
+}
+
+.contato-txt h2 {
+  color: var(--cor-0);
+  font-size: 64px;
+  padding-bottom: 60px;
+}
+@media(max-width: 800px){
+  .contato-txt {
+    padding: 20px;
+  }
+
+  .contato-txt h1{
+    font-size: 12px;
+    font-weight: 800;
+  }
+
+  .contato-txt h2 {
+    font-size: 32px;
+  }
+}
+
+/*loja online*/
+.quadrado-contato {
+  display: grid;
+  grid-template-columns: 0.7fr 1fr;
+}
+.quadrado-contato-esquerdo {
+  background-color: var(--cor-12);
+  color: var(--cor-0);
+  padding: 60px;
+  border-radius: 4px 0px 0px 4px;
+}
+
+.quadrado-contato-esquerdo h1 {
+  font-size: 18px;
+  font-weight: 100;
+  padding-bottom: 60px;
+}
+
+.contato-listas ul,
+.contato-icones {
+  padding-left: 25px;
+}
+
+.contato-listas li {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--cor-4);
+  padding-bottom: 8px;
+}
+
+.contato-lista1 {
+  padding-bottom: 10px;
+}
+
+.contato-lista2 h2 {
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+.contato-listas h2 a {
+  color: var(--cor-4);
+}
+
+.contato-listas h2 {
+  padding: 30px 0px;
+}
+
+.contato-lista2 a {
+  color: var(--cor-4);
+}
+
+.contato-lista2 a:hover,
+.contato-listas h2 a:hover {
+  color: var(--cor-0);
+}
+
+.contato-icones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding-bottom: 60px;
+  position: relative;
+}
+
+.contato-icones::before {
+  content: "";
+  position: absolute;
+  background: url(../img/dec/bottom-left.svg) no-repeat center;
+  height: 100px;
+  width: 100px;
+  top: 50px;
+  right: 330px;
+}
+.contato-listas img {
+  display: inline-block;
+}
+
+.contato-listas ul span {
+  position: relative;
+  top: 22px;
+  right: 25px;
+}
+
+
+/*lado direito*/
+.quadrado-contato-direito {
+  background: var(--cor-0);
+  box-shadow: 2px 2px 2px 0px var(--cor-7);
+  padding: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  border-radius: 0px 4px 4px 0px;
+}
+input,
+textarea {
+  font-family: "Roboto";
+  padding: 12px;
+  font-weight: 600;
+  font-size: 16px;
+  background: var(--cor-1);
+  border: 1px solid var(--cor-2);
+  padding: 12px;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.col-2 {
+  grid-column: span 2;
+}
+
+button {
+  background-color: var(--cor-p1);
+  color: var(--cor-p5);
+  padding: 16px 32px;
+  font-weight: 600;
+  font-size: 18px;
+  display: inline-block;
+  border: none;
+  text-transform: uppercase;
+  border-radius: 4px;
+  margin: 20px 0px;
+  margin-right: 30px;
+  position: relative;
+}
+
+button::after {
+  content: "";
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  background: url(../img/dec/bottom-right.svg) no-repeat center;
+  left: 530px;
+  top: 40px;
+}
+
+@media(max-width: 800px){
+  .quadrado-contato{
+    grid-template-columns: 1fr;
+    
+  }
+}
+
+
+@media(max-width: 800px){
+  
+  .lojas-locais-div{
+    grid-template-columns: 1fr;
+  } }
+/*lojas locais*/
+.lojas-locais {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.lojas-locais-div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding-bottom: 100px;
+}
+
+.lojas-locais > h1 {
+  font-size: 64px;
+  padding-bottom: 60px;
+}
+
+.rio-bg {
+  background: var(--cor-0);
+  border-radius: 4px;
+  box-shadow: 0.5px 0.5px 3px 0.5px var(--cor-5);
+}
+.rio {
+  padding: 32px;
+  display: inline-block;
+}
+
+.rio h1 {
+  font-size: 32px;
+  padding-bottom: 30px;
+}
+
+.lojas-endereço {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+}
+
+.lojas-bloco1 {
+  border-left: 2px solid var(--cor-3);
+  padding-left: 12px;
+  font-weight: 600;
+  color: var(--cor-8);
+}
+
+.lojas-bloco1 h3 {
+  margin-bottom: 10px;
+}
+
+.lojas-bloco1 a {
+  color: var(--cor-8);
+}
+.lojas-bloco1 a:hover {
+  color: var(--cor-11);
+}
+
+.lojas-detalhe {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+.lojas-detalhe h2 {
+  color: var(--cor-10);
+  font-weight: 100;
+  font-size: 18px;
+  margin: 0px;
+}
