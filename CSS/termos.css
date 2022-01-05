@@ -1,0 +1,101 @@
+:root {
+  --cor-0: #ffffff;
+  --cor-1: #f7f7f7;
+  --cor-2: #ededed;
+  --cor-3: #dedede;
+  --cor-4: #cccccc;
+  --cor-5: #b2b2b2;
+  --cor-6: #9c9c9c;
+  --cor-7: #717171;
+  --cor-8: #595959;
+  --cor-9: #404040;
+  --cor-10: #2e2e2e;
+  --cor-11: #111111;
+  --cor-12: #000000;
+  --cor-p1: #ffbb00;
+  --cor-p2: #e4a30b;
+  --cor-p3: #a66f00;
+  --cor-p4: #664400;
+  --cor-p5: #332200;
+}
+.termos-bg{
+  background-color: var(--cor-0);
+
+}
+
+.termosecondicoes-bg {
+  background: var(--cor-11);
+  padding: 60px;
+}
+
+
+.termosecondicoes,.listanumerada{
+  max-width: 1180px;
+  margin: 0 auto;
+  
+}
+
+.termosecondicoes h2 {
+  font-size: 24px;
+  position: relative;
+}
+.termosecondicoes h1{
+  font-size: 64px;
+  color: var(--cor-0);
+
+}
+.termosecondicoes h2::after{
+  content: "";
+  position: absolute;
+  background: url(../img/dec/top-right.svg) no-repeat center;
+  height: 100px;
+  width: 100px;
+  left: 1100px;
+}
+
+.listanumerada{
+  padding: 80px 20px;
+  font-family: "roboto";
+}
+
+.listanumerada h1{
+  font-size: 24px;
+  padding-bottom: 24px;
+}
+
+.listanumerada>ol{
+  padding: 0px;
+  margin: 0px;
+}
+li:last-child{
+  margin-bottom:  15px;
+}
+.listanumerada li{
+  padding-bottom: 32px;
+  font-weight: 700;
+  color: var(--cor-10);
+  max-width: 75ch;
+  font-size: 16px;
+  line-height: 25px;
+
+}
+
+@media(max-width: 800px){
+  .termosecondicoes-bg {
+    background: var(--cor-11);
+    padding: 40px 20px;
+  }
+  .termosecondicoes h1{
+      font-size: 32px;
+    }
+    .termosecondicoes h2{
+      font-size: 16px;
+      text-transform: lowercase;
+      margin: 0px;
+    }
+    .termosecondicoes h2::after{
+      left: 350px;
+      top: -30px;
+    }
+    
+}
