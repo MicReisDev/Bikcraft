@@ -835,4 +835,11 @@ h2 {
   .rodainfo {
     padding-left: 0px;
   }
+
+  .escolha-txt h1{
+    font-size: 48px;
+    padding:20px
+  }
+
+
 }
